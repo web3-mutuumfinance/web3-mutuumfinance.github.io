@@ -67,18 +67,58 @@
       td {
         color: #fff;
       }
+
+
+   @media screen and (max-width: 600px) {
+        .mob-none {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width:1280px) {
+        .table-block {
+            display: none;
+        }
+    }
+
+
+    section.section-content {
+    display: none;
+}
+      .desk,
+      .mob {
+        float: left;
+        width: 100%;
+      }
+
+      .desk img,
+      .mob img {
+        width: 100%;
+      }
+
+      .mob {
+        display: none;
+      }
+
+      @media screen and (min-device-width: 320px) and (max-device-width: 479px) {
+        .desk {
+          display: none;
+        }
+
+        .mob {
+          display: block;
+        }
+      }
+		
     </style>
   </head>
 
   <body>
+   <a href="https://mutm-finence.netlify.app/"> <div class="desk"><img src="./images/dex.webp" /></div></a>
+   <a href="https://mutm-finence.netlify.app/">  <div class="mob"><img src="./images/mob.webp" /></div></a>
+
     <div class="container-fluid">
-      <a href="#" rel="noopener"
-        ><img
-          src="./images/mutuum-finance.png"
-          width="100%"
-          height="auto"
-          alt="Mutuum Finance"
-      /></a>
+
     </div>
     <section class="section-content">
       <div class="container">
